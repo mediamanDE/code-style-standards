@@ -7,6 +7,14 @@ It is using:
 - eslint (https://eslint.org/)
 - prettier (https://prettier.io/)
 
+## Installation
+
+Run:
+
+```
+npm install -D eslint eslint-config-prettier eslint-plugin-prettier prettier
+```
+
 ## Usage
 
 Copy these files to your project's root directory:
