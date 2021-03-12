@@ -9,10 +9,34 @@ It is using:
 
 ## Installation
 
-Run:
+### Prettier
 
 ```
-npm install -D eslint eslint-config-prettier eslint-plugin-prettier prettier
+npm i -D  eslint-config-prettier eslint-plugin-prettier prettier
+```
+
+### ESLint
+
+```
+npm i -D @typescript-eslint/eslint-plugin@latest eslint-config-standard@latest eslint@^7.12.1 eslint-plugin-import@^2.22.1 eslint-plugin-node@^11.1.0 eslint-plugin-promise@^4.2.1 @typescript-eslint/parser@latest
+```
+
+
+To get this combination of packages you can run:
+```
+npx eslint --init
+```
+
+with these answers:
+```
+✔ How would you like to use ESLint? · style
+✔ What type of modules does your project use? · esm
+✔ Which framework does your project use? · none
+✔ Does your project use TypeScript? · Yes
+✔ Where does your code run? · browser
+✔ How would you like to define a style for your project? · guide
+✔ Which style guide do you want to follow? · standard
+✔ What format do you want your config file to be in? · JSON
 ```
 
 ## Usage
