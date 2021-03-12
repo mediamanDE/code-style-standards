@@ -45,7 +45,7 @@ Copy these files to your project's root directory:
 
 ```
 ├── .eslintrc.json
-└── .prettierrc.json
+└── .prettierrc.yaml
 ```
 
 You can also find some npm script examples in the package.json that can be used as a reference.

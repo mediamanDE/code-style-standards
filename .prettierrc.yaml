@@ -1,0 +1,5 @@
+printWidth: 110
+singleQuote: true
+tabWidth: 2 #prettier default
+
+# For all options amd defaults see: https://prettier.io/docs/en/options.html
