@@ -1,11 +1,11 @@
 {
-  "name": "mm-eslint",
-  "version": "1.0.0",
+  "name": "mm-code-style-standards",
+  "version": "1.0.1",
   "description": "Standard settings for mm projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint",
+    "eslint": "eslint 'src/**'",
     "eslint:fix": "npm run eslint -- --fix"
   },
   "author": "",
