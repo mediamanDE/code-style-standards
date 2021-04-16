@@ -39,6 +39,18 @@ with these answers:
 ✔ What format do you want your config file to be in? · JSON
 ```
 
+### Husky
+
+```
+npx husky-init && npm install
+```
+
+### Lint-Staged
+
+```
+npx mrm lint-staged
+```
+
 ## Usage
 
 Copy these files to your project's root directory:
@@ -49,6 +61,24 @@ Copy these files to your project's root directory:
 ```
 
 You can also find some npm script examples in the package.json that can be used as a reference.
+
+### Git hooks
+
+To create a pre commit hook run:
+```
+npx husky add .husky/pre-commit 'npm test'
+```
+You can edit this new file (`.husky/pre-commit`) to modify the hook.
+Husky is using the available git hooks: https://git-scm.com/docs/githooks
+
+### Lint-Staged
+
+In this example we defined a lint-staged configuration:
+```
+"lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+```
 
 ## What if I need different settings for my project?
 
