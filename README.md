@@ -6,8 +6,10 @@ It is using:
 
 - eslint (https://eslint.org/)
 - prettier (https://prettier.io/)
+- lint-staged (https://github.com/okonet/lint-staged#readme)
+- husky (https://typicode.github.io/husky/)
 
-## Installation
+## Installation of tools
 
 ### Prettier
 
@@ -39,8 +41,22 @@ with these answers:
 ✔ What format do you want your config file to be in? · JSON
 ```
 
-## Usage
+### Husky
 
+You can add husky to your project by:
+```
+npx husky-init && npm install
+```
+
+### Lint-Staged
+
+```
+npx mrm lint-staged
+```
+
+## Usage in your project
+
+### Prettier / Linting
 Copy these files to your project's root directory:
 
 ```
@@ -49,6 +65,24 @@ Copy these files to your project's root directory:
 ```
 
 You can also find some npm script examples in the package.json that can be used as a reference.
+
+### Lint-Staged
+
+In this example we defined a lint-staged configuration:
+```
+"lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+```
+
+### Git hooks
+
+To create a pre commit hook run:
+```
+npx husky add .husky/pre-commit 'npm test'
+```
+You can edit this new file (`.husky/pre-commit`) to modify the hook.
+Husky is using the available git hooks: https://git-scm.com/docs/githooks
 
 ## What if I need different settings for my project?
 
