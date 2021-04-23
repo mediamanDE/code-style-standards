@@ -1,0 +1,7 @@
+$var: red;
+
+* {
+  width: 550;
+  color: $var;
+  height: $non-existing-variable;
+}

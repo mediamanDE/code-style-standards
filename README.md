@@ -58,7 +58,7 @@ npx mrm lint-staged
 ### stylelint
 
 ```
-npm i -D stylelint stylelint-config-standard
+npm i -D stylelint stylelint-config-standard stylelint-config-sass-guidelines
 ```
 
 ## Usage in your project
@@ -80,6 +80,12 @@ In this example we defined a lint-staged configuration:
 "lint-staged": {
     "*.js": "eslint --cache --fix"
   }
+```
+
+## stylelint
+
+```
+npx stylelint "**/*.scss"
 ```
 
 ### Git hooks
