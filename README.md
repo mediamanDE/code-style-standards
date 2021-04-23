@@ -8,13 +8,14 @@ It is using:
 - prettier (https://prettier.io/)
 - lint-staged (https://github.com/okonet/lint-staged#readme)
 - husky (https://typicode.github.io/husky/)
+- stylelint (https://stylelint.io/)
 
 ## Installation of tools
 
 ### Prettier
 
 ```
-npm i -D  eslint-config-prettier eslint-plugin-prettier prettier
+npm i -D eslint-config-prettier eslint-plugin-prettier prettier
 ```
 
 ### ESLint
@@ -52,6 +53,12 @@ npx husky-init && npm install
 
 ```
 npx mrm lint-staged
+```
+
+### stylelint
+
+```
+npm i -D stylelint stylelint-config-standard
 ```
 
 ## Usage in your project
