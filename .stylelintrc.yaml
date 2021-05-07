@@ -1,6 +1,9 @@
 extends:
-  - stylelint-config-standard
+  - stylelint-prettier/recommended
   - stylelint-config-sass-guidelines
-rules:
-  indentation: tab
-  number-leading-zero: null
+
+# This does three things:
+#
+#Enables the stylelint-plugin-prettier plugin.
+#Enables the prettier/prettier rule.
+#Extends the stylelint-config-prettier configuration.

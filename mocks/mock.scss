@@ -1,7 +1,11 @@
-$var: red;
+$var: #f00;
 
 * {
-  width: 550;
   color: $var;
-  height: $non-existing-variable;
+  height: 0;
+  width: 550;
+}
+
+.another-test {
+  color: #00f;
 }
