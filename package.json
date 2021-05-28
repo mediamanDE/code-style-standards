@@ -7,7 +7,8 @@
     "test": "echo \"no test specified yet\"",
     "eslint": "eslint 'src/**'",
     "eslint:fix": "npm run eslint -- --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "stylelint": "stylelint '**/*.scss'"
   },
   "author": "",
   "license": "MIT",
@@ -24,13 +25,14 @@
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
-    "stylelint": "^13.12.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0",
     "stylelint-prettier": "^1.2.0"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
+    "*.{js,ts}": "eslint --cache --fix",
     "*.scss": "stylelint --fix"
   }
 }
