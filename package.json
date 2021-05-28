@@ -1,6 +1,6 @@
 {
   "name": "mm-code-style-standards",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Standard settings for mm projects",
   "main": "index.js",
   "scripts": {
