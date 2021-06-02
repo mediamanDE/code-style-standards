@@ -21,7 +21,7 @@ npm i -D eslint-config-prettier eslint-plugin-prettier prettier
 ### Install eslint
 
 ```
-npm i -D @typescript-eslint/eslint-plugin@latest eslint-config-standard@latest eslint@^7.12.1 eslint-plugin-import@^2.22.1 eslint-plugin-node@^11.1.0 eslint-plugin-promise@^4.2.1 @typescript-eslint/parser@latest
+npm i -D @typescript-eslint/eslint-plugin@latest eslint-config-standard@latest eslint@latest eslint-plugin-import@latest eslint-plugin-node@latest eslint-plugin-promise@latest @typescript-eslint/parser@latest
 ```
 
 
