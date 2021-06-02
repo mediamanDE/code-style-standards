@@ -1,4 +1,4 @@
-# mediaman Linting and Code Style Standards for JS and TS
+# mediaman Linting and Code Style Standards for JS, TS and SCSS
 
 This repository contains rational presets for typical JavaScript or TypeScript based projects.
 
@@ -8,16 +8,17 @@ It is using:
 - prettier (https://prettier.io/)
 - lint-staged (https://github.com/okonet/lint-staged#readme)
 - husky (https://typicode.github.io/husky/)
+- stylelint (https://stylelint.io/)
 
-## Installation of tools
+## Installation of Tools
 
-### Prettier
+### Install prettier
 
 ```
-npm i -D  eslint-config-prettier eslint-plugin-prettier prettier
+npm i -D eslint-config-prettier eslint-plugin-prettier prettier
 ```
 
-### ESLint
+### Install eslint
 
 ```
 npm i -D @typescript-eslint/eslint-plugin@latest eslint-config-standard@latest eslint@^7.12.1 eslint-plugin-import@^2.22.1 eslint-plugin-node@^11.1.0 eslint-plugin-promise@^4.2.1 @typescript-eslint/parser@latest
@@ -41,46 +42,59 @@ with these answers:
 ✔ What format do you want your config file to be in? · JSON
 ```
 
-### Husky
+### Install husky
 
 You can add husky to your project by:
 ```
 npx husky-init && npm install
 ```
 
-### Lint-Staged
+### Install lint-staged
 
 ```
 npx mrm lint-staged
 ```
 
+### Install stylelint
+
+```
+npm i -D stylelint stylelint-config-standard stylelint-config-sass-guidelines
+```
+
 ## Usage in your project
 
-### Prettier / Linting
-Copy these files to your project's root directory:
+### Config files to be copied
 
+Copy these files to your project's root directory:
 ```
 ├── .eslintrc.json
 └── .prettierrc.yaml
+└── .stylelintrc.yaml
 ```
 
 You can also find some npm script examples in the package.json that can be used as a reference.
 
-### Lint-Staged
+### Use lint-staged
 
-In this example we defined a lint-staged configuration:
+“Run linters against staged git files only”
+
+The common use case includes linting with eslint and stylelint.
+Defining a lint-staged configuration in your `package.json` does all the work:
 ```
 "lint-staged": {
-    "*.js": "eslint --cache --fix"
-  }
+  "*.{js,ts}": "eslint --cache --fix",
+  "*.scss": "stylelint --fix"
+}
 ```
 
-### Git hooks
+### Add git hooks with husky
 
-To create a pre commit hook run:
+To create a pre commit hook for your npm scripts run:
 ```
 npx husky add .husky/pre-commit 'npm test'
+npx husky add .husky/pre-commit 'npx lint-staged'
 ```
+
 You can edit this new file (`.husky/pre-commit`) to modify the hook.
 Husky is using the available git hooks: https://git-scm.com/docs/githooks
 

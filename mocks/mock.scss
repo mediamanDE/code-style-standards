@@ -1,0 +1,11 @@
+$var: #f00;
+
+* {
+  color: $var;
+  height: 0;
+  width: 550;
+}
+
+.another-test {
+  color: #00f;
+}

@@ -1,0 +1,9 @@
+extends:
+  - stylelint-prettier/recommended
+  - stylelint-config-sass-guidelines
+
+# This does three things:
+#
+#Enables the stylelint-plugin-prettier plugin.
+#Enables the prettier/prettier rule.
+#Extends the stylelint-config-prettier configuration.
