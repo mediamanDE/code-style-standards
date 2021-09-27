@@ -58,7 +58,7 @@ npx mrm lint-staged
 ### Install stylelint
 
 ```
-npm i -D stylelint stylelint-config-standard stylelint-config-sass-guidelines
+npm i -D stylelint stylelint-prettier stylelint-config-standard stylelint-config-sass-guidelines
 ```
 
 ## Usage in your project
