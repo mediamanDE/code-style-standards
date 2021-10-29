@@ -15,7 +15,7 @@ It is using:
 ### Install prettier
 
 ```
-npm i -D eslint-config-prettier eslint-plugin-prettier prettier
+npm i -D stylelint-config-prettier eslint-config-prettier eslint-plugin-prettier prettier
 ```
 
 ### Install eslint
