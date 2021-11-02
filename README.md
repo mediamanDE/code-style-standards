@@ -15,7 +15,7 @@ It is using:
 ### Install prettier
 
 ```
-npm i -D eslint-config-prettier eslint-plugin-prettier prettier
+npm i -D stylelint-config-prettier eslint-config-prettier eslint-plugin-prettier prettier
 ```
 
 ### Install eslint
@@ -52,8 +52,9 @@ npx husky-init && npm install
 ### Install lint-staged
 
 ```
-npx mrm lint-staged
+npx mrm@2 lint-staged
 ```
+Force version 2, because current version of mrm [is not compatible with lint-staged.](https://github.com/sapegin/mrm/issues/168)
 
 ### Install stylelint
 
